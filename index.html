@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>NewJeans Landing Page</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+  <div class="logo">
+
+    <img src="images/newjeans.png" alt="NewJeans Logo">
+
+    <h2>NewJeans</h2>
+
+  </div>
+
+  <nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#news">What's New</a>
+
+    <a href="#albums">Albums</a>
+
+    <a href="#members">Members</a>
+
+    <a href="#gallery">Gallery</a>
+
+    <a href="#about">About</a>
+
+  </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="hero-text">
+
+    <div class="hero-tags">
+
+      <span>#KPOP</span>
+
+      <span>#ADOR</span>
+
+      <span>#GLOBAL</span>
+
+    </div>
+
+    <h1>NewJeans</h1>
+
+    <p>
+      A global girl group redefining modern pop culture with fresh music,
+      youthful energy, and iconic aesthetics.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#members">Explore Members</a>
+
+      <a href="#albums" class="secondary">Latest Albums</a>
+
+    </div>
+
+    <div class="hero-stats">
+
+      <div class="stat">
+
+        <h3>15M+</h3>
+
+        <p>Monthly Listeners</p>
+
+      </div>
+
+      <div class="stat">
+
+        <h3>5</h3>
+
+        <p>Members</p>
+
+      </div>
+
+      <div class="stat">
+
+        <h3>4</h3>
+
+        <p>Albums</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+
+    <img src="images/group.jpg" alt="NewJeans Group">
+
+  </div>
+
+  <div class="floating-card">
+
+    <h4>Top Song</h4>
+
+    <p>Super Shy 🎵</p>
+
+  </div>
+
+</section>
+
+<!-- NEWS -->
+
+<section class="news" id="news">
+
+  <h2>What’s New</h2>
+
+  <div class="news-container">
+
+    <div class="news-card"
+
+    onclick="openNews(
+    'Comeback Preparation',
+    'ADOR confirmed NewJeans members were in Copenhagen for pre-production work related to a new musical narrative.',
+    'Korea JoongAng Daily',
+    'https://koreajoongangdaily.joins.com/news/2026-04-27/entertainment/kpop/NewJeans-comeback-rumors-pick-up-steam-as-ADOR-confirms-preproduction-in-Copenhagen/2578952'
+    )">
+
+      <h3>Comeback Preparation</h3>
+
+      <p>ADOR confirmed pre-production activities in Copenhagen.</p>
+
+    </div>
+
+    <div class="news-card"
+
+    onclick="openNews(
+    'Billboard Artist Updates',
+    'Billboard provides NewJeans artist information, music news, biography, and updates.',
+    'Billboard',
+    'https://www.billboard.com/artist/newjeans/'
+    )">
+
+      <h3>Billboard Updates</h3>
+
+      <p>Latest artist news and music information from Billboard.</p>
+
+    </div>
+
+    <div class="news-card"
+
+    onclick="openNews(
+    'Return to ADOR',
+    'Pitchfork reported that NewJeans would return to ADOR following a legal dispute.',
+    'Pitchfork',
+    'https://pitchfork.com/news/newjeans-to-return-to-label-following-legal-dispute/'
+    )">
+
+      <h3>Return to ADOR</h3>
+
+      <p>Update about NewJeans returning to ADOR.</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ALBUMS -->
+
+<section class="albums" id="albums">
+
+  <h2>Albums</h2>
+
+  <div class="album-container">
+
+    <div class="album-card"
+
+    onclick="openAlbum(
+    'Get Up',
+    'images/getup.jpeg',
+    'Produced by: Min Hee-jin',
+    'Tracklist: New Jeans, Super Shy, ETA, Cool With You, ASAP'
+    )">
+
+      <img src="images/getup.jpeg" alt="Get Up Album">
+
+      <h3>Get Up</h3>
+
+      <p>2023</p>
+
+    </div>
+
+    <div class="album-card"
+
+    onclick="openAlbum(
+    'OMG',
+    'images/omg.jpeg',
+    'Produced by: Min Hee-jin',
+    'Tracklist: OMG, Ditto'
+    )">
+
+      <img src="images/omg.jpeg" alt="OMG Album">
+
+      <h3>OMG</h3>
+
+      <p>2023</p>
+
+    </div>
+
+    <div class="album-card"
+
+    onclick="openAlbum(
+    'Supernatural',
+    'images/supernatural.jpeg',
+    'Produced by: HYBE & ADOR',
+    'Tracklist: Supernatural, Right Now'
+    )">
+
+      <img src="images/supernatural.jpeg" alt="Supernatural Album">
+
+      <h3>Supernatural</h3>
+
+      <p>2024</p>
+
+    </div>
+
+    <div class="album-card"
+
+    onclick="openAlbum(
+    'How Sweet',
+    'images/howsweet.jpeg',
+    'Produced by: Min Hee-jin',
+    'Tracklist: How Sweet, Bubble Gum'
+    )">
+
+      <img src="images/howsweet.jpeg" alt="How Sweet Album">
+
+      <h3>How Sweet</h3>
+
+      <p>2024</p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MEMBERS -->
+
+<section class="members" id="members">
+
+  <h2>Members</h2>
+
+  <div class="member-container">
+
+    <!-- MINJI -->
+
+    <div class="member-card"
+
+    onclick="openModal(
+    'Minji',
+    ['images/minji.jpeg','images/minji1.jpeg','images/minji2.jpeg'],
+    'Birth: May 7, 2004',
+    'Nationality: Korean',
+    'Position: Leader, Vocalist',
+    'Fun Fact: Known for her calm charisma and elegant visuals.'
+    )">
+
+      <img src="images/minji.jpeg" alt="Minji">
+
+      <h3>Minji</h3>
+
+    </div>
+
+    <!-- HANNI -->
+
+    <div class="member-card"
+
+    onclick="openModal(
+    'Hanni',
+    ['images/hanni.jpeg','images/hanni1.jpeg','images/hanni2.jpeg'],
+    'Birth: October 6, 2004',
+    'Nationality: Vietnamese-Australian',
+    'Position: Vocalist',
+    'Fun Fact: Loves bread and has a bright personality.'
+    )">
+
+      <img src="images/hanni.jpeg" alt="Hanni">
+
+      <h3>Hanni</h3>
+
+    </div>
+
+    <!-- DANIELLE -->
+
+    <div class="member-card"
+
+    onclick="openModal(
+    'Danielle',
+    ['images/danielle.jpeg','images/danielle1.jpeg','images/danielle2.jpeg'],
+    'Birth: April 11, 2005',
+    'Nationality: Korean-Australian',
+    'Position: Vocalist',
+    'Fun Fact: Has cheerful energy and unique vocals.'
+    )">
+
+      <img src="images/danielle.jpeg" alt="Danielle">
+
+      <h3>Danielle</h3>
+
+    </div>
+
+    <!-- HAERIN -->
+
+    <div class="member-card"
+
+    onclick="openModal(
+    'Haerin',
+    ['images/haerin.jpeg','images/haerin1.jpeg','images/haerin2.jpeg'],
+    'Birth: May 15, 2006',
+    'Nationality: Korean',
+    'Position: Vocalist',
+    'Fun Fact: Famous for her cat-like visuals.'
+    )">
+
+      <img src="images/haerin.jpeg" alt="Haerin">
+
+      <h3>Haerin</h3>
+
+    </div>
+
+    <!-- HYEIN -->
+
+    <div class="member-card"
+
+    onclick="openModal(
+    'Hyein',
+    ['images/hyein.jpeg','images/hyein1.jpeg','images/hyein2.jpeg'],
+    'Birth: April 21, 2008',
+    'Nationality: Korean',
+    'Position: Maknae',
+    'Fun Fact: Youngest member with strong stage presence.'
+    )">
+
+      <img src="images/hyein.jpeg" alt="Hyein">
+
+      <h3>Hyein</h3>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section class="gallery" id="gallery">
+
+  <h2>Gallery</h2>
+
+  <div class="gallery-container">
+
+    <img src="images/newjeans1.jpg" alt="" onclick="openGallery(this.src)">
+
+    <img src="images/newjeans2.jpg" alt="" onclick="openGallery(this.src)">
+
+    <img src="images/newjeans3.jpg" alt="" onclick="openGallery(this.src)">
+
+    <img src="images/newjeans4.jpg" alt="" onclick="openGallery(this.src)">
+
+    <img src="images/newjeans5.jpg" alt="" onclick="openGallery(this.src)">
+
+    <img src="images/newjeans6.jpg" alt="" onclick="openGallery(this.src)">
+
+  </div>
+
+</section>
+
+<!-- MEMBER MODAL -->
+
+<div class="modal" id="memberModal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <div class="modal-image-container">
+
+      <button class="slide-btn left" onclick="prevImage()">❮</button>
+
+      <img id="modalImage" src="" alt="">
+
+      <button class="slide-btn right" onclick="nextImage()">❯</button>
+
+    </div>
+
+    <div class="modal-info">
+
+      <h3 id="modalName"></h3>
+
+      <p id="modalBirth"></p>
+
+      <p id="modalNation"></p>
+
+      <p id="modalPosition"></p>
+
+      <p id="modalFact"></p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ALBUM MODAL -->
+
+<div class="album-modal" id="albumModal">
+
+  <div class="album-modal-content">
+
+    <span class="album-close" onclick="closeAlbum()">&times;</span>
+
+    <img id="albumImage" src="" alt="">
+
+    <h3 id="albumTitle"></h3>
+
+    <p id="albumProducer"></p>
+
+    <p id="albumTracks"></p>
+
+  </div>
+
+</div>
+
+<!-- GALLERY MODAL -->
+
+<div class="gallery-modal" id="galleryModal">
+
+  <span class="gallery-close" onclick="closeGallery()">&times;</span>
+
+  <img id="galleryImage" src="" alt="">
+
+  <a id="downloadBtn" href="" download>Download Image</a>
+
+</div>
+
+<!-- NEWS MODAL -->
+
+<div class="news-modal" id="newsModal">
+
+  <div class="news-modal-content">
+
+    <span class="news-close" onclick="closeNews()">&times;</span>
+
+    <h3 id="newsTitle"></h3>
+
+    <p id="newsDesc"></p>
+
+    <p id="newsSource"></p>
+
+    <a id="newsLink" href="" target="_blank">Read Source</a>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer id="about">
+
+  <div class="footer-content">
+
+    <div class="footer-logo">
+
+      <img src="images/newjeans.png" alt="NewJeans Logo">
+
+    </div>
+
+    <p>
+      A modern landing page inspired by NewJeans aesthetics and creativity.
+    </p>
+
+    <div class="socials">
+
+      <a href="https://www.instagram.com/newjeans_official/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="https://www.youtube.com/@NewJeans_official" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a href="https://open.spotify.com/artist/6HvZYsbFfjnjFrWF950C9d" target="_blank">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+
+    </div>
+
+    <span>
+      © 2026 NewJeans Fan Landing Page. All rights reserved.
+    </span>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
