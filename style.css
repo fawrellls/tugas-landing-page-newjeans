@@ -16,6 +16,18 @@ section{
   padding:0;
   box-sizing:border-box;
   font-family:'Poppins', sans-serif;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+  a,
+  button,
+  .news-card,
+  .album-card,
+  .member-card,
+  .gallery-container img{
+  -webkit-tap-highlight-color: transparent;
+  user-select:none;
 }
 
 body{
