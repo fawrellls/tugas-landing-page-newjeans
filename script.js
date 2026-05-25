@@ -2,10 +2,17 @@ let currentImages = [];
 let currentIndex = 0;
 
 function openModal(name, images, birth, nation, position, fact){
+
   currentImages = images;
   currentIndex = 0;
 
+  images.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+  });
+
   document.getElementById("memberModal").style.display = "flex";
+
   document.getElementById("modalName").innerText = name;
   document.getElementById("modalImage").src = currentImages[currentIndex];
   document.getElementById("modalBirth").innerText = birth;

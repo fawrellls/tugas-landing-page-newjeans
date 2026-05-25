@@ -987,3 +987,20 @@ nav::-webkit-scrollbar-thumb{
     opacity:0.3;
   }
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
+img{
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+.news-card,
+.album-card,
+.member-card,
+.gallery-container img,
+.hero-buttons a{
+  transition:0.3s ease;
+}
